@@ -79,12 +79,12 @@ function addCarsCards() {
                   <a href="car-single.html">${$caravans[carvan].name}</a>
                 </h2>
                 <div class="d-flex mb-3">
-                  <span class="cat">${$caravans[carvan].name}</span>
+                  <span class="cat">${$caravans[carvan].capacity}</span>
                   <p class="price ml-auto">${$caravans[carvan].price} </p>
                 </div>
                 <p class="d-flex mb-0 d-block">
                   
-                  <a class="btn btn-secondary py-2 ml-1 more_detailes" href="car-single.html" style="width:100%" caravan-id=${carvan} class="btn btn-secondary py-2 ml-1">التفاصيل</a>
+                  <a class="btn btn-secondary py-2 ml-1 more_detailes"  style="width:100%" caravan-id=${carvan} class="btn btn-secondary py-2 ml-1">التفاصيل</a>
                 </p>
               </div>
             </div>
@@ -92,13 +92,53 @@ function addCarsCards() {
     carElmentDiv
       .querySelector(".more_detailes")
       .addEventListener("click", (e) => {
+        e.preventDefault();
         $selectedCaravan = e.currentTarget.getAttribute("caravan-id");
-        // readHtmlFile((element) => {
-        //   let ditCar = element;
-        //   document.appendChild(ditCar);
-        // });
+        let path = "car-single.html";
+        let modalContent = readTextFile(path);
+        extractBodyContentAsHTML(modalContent).then(function (html) {
+          let carsList = document.querySelector("#carlist-section");
+          carsList.firstElementChild.classList.add("d-none");
+          let car_detailes = html.querySelector("#car-details-section");
+          carsList.appendChild(car_detailes);
+        });
       });
+    document.querySelector("#back_to_cars").addEventListener("click", () => {
+      let carsList = document.querySelector("#carlist-section");
+      carsList.firstElementChild.classList.remove("d-none");
+      document.querySelector("#car-details-section").remove();
+    });
     carList.appendChild(carElmentDiv);
   }
 }
 addCarsCards();
+function readTextFile(path) {
+  path = getLink(path);
+
+  var rawFile = new XMLHttpRequest();
+  rawFile.open("GET", path, false);
+  rawFile.onreadystatechange = function () {
+    if (rawFile.readyState === 4) {
+      if (rawFile.status === 200 || rawFile.status == 0) {
+        var allText = rawFile.responseText;
+      }
+    }
+  };
+  rawFile.send(null);
+  return rawFile.responseText;
+}
+async function extractBodyContentAsHTML(html) {
+  let promise = new Promise(function (resolve) {
+    html = html.substring(
+      html.indexOf(">", html.indexOf("<body")) + 1,
+      html.indexOf("</body>")
+    );
+    let div = document.createElement("div");
+    div.innerHTML = html;
+    resolve(div);
+  });
+  return await promise;
+}
+function getLink(linkPath) {
+  return linkPath;
+}

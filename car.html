@@ -55,7 +55,7 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link">الرئيسي</a>
+              <a href="index.html" class="nav-link">الرئيسية</a>
             </li>
             <li class="nav-item active">
               <a href="about.html" class="nav-link">من نحن</a>
@@ -68,7 +68,7 @@
               <a href="car.html" class="nav-link">الكرفانات</a>
             </li>
             <li class="nav-item">
-              <a href="blog.html" class="nav-link">المدونة</a>
+              <a href="blog.html" class="nav-link d-none">المدونة</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">التواصل</a>
@@ -81,9 +81,14 @@
 
     <section
       class="hero-wrap hero-wrap-2 js-fullheight"
-      style="background-image: url('images/bg_3.jpg')"
-      data-stellar-background-ratio="0.5"
+      style="
+        background-image: url('images/car_detailes_cover.jpg');
+        background-position: center;
+        background-size: cover;
+      "
     >
+      <!-- Your content goes here -->
+
       <div class="overlay"></div>
       <div class="container">
         <div
@@ -95,7 +100,9 @@
                 ><a href="index.html"
                   >Home <i class="ion-ios-arrow-forward"></i></a
               ></span>
-              <span>Cars <i class="ion-ios-arrow-forward"></i></span>
+              <span id="back_to_cars">
+                Cars <i class="ion-ios-arrow-forward"></i
+              ></span>
             </p>
             <h1 class="mb-3 bread">Choose Your Car</h1>
           </div>
@@ -103,7 +110,7 @@
       </div>
     </section>
 
-    <section class="ftco-section bg-light">
+    <section class="ftco-section bg-light" id="carlist-section">
       <div class="container">
         <div class="row carvans_list"></div>
         <div class="row mt-5 d-none">
