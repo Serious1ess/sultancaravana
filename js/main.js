@@ -347,7 +347,10 @@ $caravans = {
   caravan1: {
     name: "GOLDEN GRAND",
     price: "$15,500",
-    img: "images/caravans/caravan1/IMG-20240101-WA0008.jpg",
+    img: "images/caravans/caravan1/1.jpg",
+    imageFolder: "caravan1",
+    ImageType: "jpg",
+    imageNumber: 5,
     capacity: "4",
     dimensions: {
       length: "3.90m",
@@ -373,17 +376,21 @@ $caravans = {
       },
       custom_color: true,
     },
+    discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
   },
   caravan2: {
     name: "TIGER",
     price: "$4200",
     capacity: "2 أشخاص",
-    img: "images/caravans/caravan2/IMG-20240103-WA0009.jpg",
+    img: "images/caravans/caravan2/1.jpg",
+    imageFolder: "caravan2",
+    ImageType: "jpg",
+    imageNumber: 11,
     dimensions: {
       length: "2.40 m",
       width: "2 m",
       height: "2 m",
-      wight: "450 kg",
+      weight: "450 kg",
     },
     water_tanks: {
       clean_water: "100 لتر",
@@ -403,17 +410,20 @@ $caravans = {
       },
       custom_color: true,
     },
+    discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
   },
   caravan3: {
     name: "SULTAN",
     price: "$5200",
     capacity: "2 أشخاص",
-    img: "images/caravans/caravan3/IMG-20240103-WA0022.jpg",
+    img: "images/caravans/caravan3/1.jpg",
+    imageFolder: "caravan3",
+    imageNumber: 8,
     dimensions: {
       length: "3.90m",
       width: "2m",
       height: "2m",
-      wight: "750 kg",
+      weight: "750 kg",
     },
     water_tanks: {
       clean_water: "100 L",
@@ -433,12 +443,16 @@ $caravans = {
       },
       custom_color: true,
     },
+    discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
   },
   caravan4: {
     name: "MONESTER",
     price: "$6200",
     capacity: "4 أشخاص",
-    img: "images/caravans/caravan4/IMG-20240103-WA0031.jpg",
+    img: "images/caravans/caravan4/1.jpg",
+    imageFolder: "caravan4",
+    imageNumber: 4,
+    ImageType: "jpg",
     dimensions: {
       length: "2.25 متر",
       width: "2.25 متر",
@@ -456,7 +470,6 @@ $caravans = {
       "مغسلة يد اضافية في الحمام",
       "بلور بانورامي كامل",
       "خشب الاثاث بوزن خفيف وجودة أعلى",
-      "للمزيد من التفاصيل انقر على الفيديو التفصيلي لمشاعدة الكرافان بشكل كامل",
     ],
     solar_power_system: true,
     optional_additions: {
@@ -466,17 +479,22 @@ $caravans = {
       },
       custom_color: true,
     },
+    discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
   },
   caravan5: {
     name: "POWER",
     price: "$11600",
     capacity: "5 أشخاص",
-    img: "images/caravans/caravan3/IMG-20240103-WA0022.jpg",
+    img: "images/caravans/caravan5/1.jpeg",
+    imageFolder: "caravan5",
+    imageNumber: 23,
+    ImageType: "jpeg",
+    videosNum: 1,
     dimensions: {
       length: "3.90m",
       width: "2m",
       height: "2m",
-      wight: "750 kg",
+      weight: "750 kg",
     },
     water_tanks: {
       clean_water: "100 L",
@@ -511,6 +529,7 @@ $caravans = {
       },
       custom_color: true,
     },
+    discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
   },
 };
 $selectedCaravan = 0;

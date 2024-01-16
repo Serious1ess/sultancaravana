@@ -100,6 +100,10 @@ function addCarsCards() {
           let carsList = document.querySelector("#carlist-section");
           carsList.firstElementChild.classList.add("d-none");
           let car_detailes = html.querySelector("#car-details-section");
+          let imgPreContainer = car_detailes.querySelector(".carousel-inner");
+
+          buildImagesPreview(imgPreContainer);
+          buildCarvanInfo(car_detailes);
           carsList.appendChild(car_detailes);
         });
       });
@@ -141,4 +145,82 @@ async function extractBodyContentAsHTML(html) {
 }
 function getLink(linkPath) {
   return linkPath;
+}
+function buildImagesPreview(container) {
+  let caravan = $caravans[$selectedCaravan];
+  let imgNum = caravan.imageNumber;
+  let ImgType = caravan.ImageType;
+  let vidNum = caravan.videosNum;
+  for (let i = 1; i <= imgNum; i++) {
+    let div = document.createElement("div");
+    if (i == 1) div.classList.add("carousel-item", "active");
+    else div.classList.add("carousel-item");
+    let itemHtml = ` 
+    <div
+      class="img rounded"
+      style="
+        background-image: url(images/caravans/${$selectedCaravan}/${i}.${ImgType});
+      "
+    ></div>
+  `;
+    div.innerHTML = itemHtml;
+
+    container.appendChild(div);
+  }
+  if (vidNum) {
+    for (let i = 1; i <= vidNum; i++) {
+      let div = document.createElement("div");
+      div.classList.add("carousel-item");
+      let itemHtml = `
+   
+      <video width="100%" height="600px" controls>
+                      <source
+                        src="images/caravans/${$selectedCaravan}/${i}.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+    `;
+      div.innerHTML = itemHtml;
+      container.appendChild(div);
+    }
+  }
+}
+function buildCarvanInfo(container) {
+  let caravan = $caravans[$selectedCaravan];
+  let carvName = container.querySelector(".caravan_name");
+  let caravan_price = container.querySelector(".caravan_price");
+  let caravan_length = container.querySelector(".caravan_length");
+  let caravan_width = container.querySelector(".caravan_width");
+  let caravan_capacity = container.querySelector(".caravan_capacity");
+  let caravan_wight = container.querySelector(".caravan_wight");
+  let caravan_height = container.querySelector(".caravan_height");
+
+  carvName.innerText = caravan.name;
+  caravan_price.innerText = caravan.price;
+  caravan_length.innerText = caravan.dimensions.length;
+  caravan_width.innerText = caravan.dimensions.width;
+  caravan_capacity.innerText = caravan.capacity;
+  caravan_wight.innerText = caravan.dimensions.weight;
+  caravan_height.innerText = caravan.dimensions.height;
+  let featuresContainer1 = container.querySelector(".features-list1");
+  let featuresContainer2 = container.querySelector(".features-list2");
+  let featuresContainer3 = container.querySelector(".features-list3");
+  for (let feature of caravan.features) {
+    let li = document.createElement("li");
+    li.classList.add("check");
+    let featureHTml = `
+  <span class="ion-ios-checkmark"></span>${feature}
+`;
+    li.innerHTML = featureHTml;
+    let index = caravan.features.indexOf(feature);
+    if (index > 6 && index < 13) {
+      featuresContainer2.appendChild(li);
+    } else if (index > 13) {
+      featuresContainer3.appendChild(li);
+    } else featuresContainer1.appendChild(li);
+  }
+
+  let caravan_discp = container.querySelector(".caravan_discp");
+  caravan_discp.innerText = caravan.discp;
 }

@@ -14,7 +14,8 @@ $caravans = {
   caravan1: {
     name: "GOLDEN GRAND",
     price: "$15,500",
-    img: "images/caravans/caravan1/IMG-20240101-WA0008.jpg",
+    img: "images/caravans/caravan1/1.jpg",
+    imageFolder: "caravan1",
     capacity: "4",
     dimensions: {
       length: "3.90m",
@@ -45,7 +46,8 @@ $caravans = {
     name: "TIGER",
     price: "$4200",
     capacity: "2 أشخاص",
-    img: "images/caravans/caravan2/IMG-20240103-WA0009.jpg",
+    img: "images/caravans/caravan2/1.jpg",
+    imageFolder: "caravan2",
     dimensions: {
       length: "2.40 m",
       width: "2 m",
@@ -75,7 +77,8 @@ $caravans = {
     name: "SULTAN",
     price: "$5200",
     capacity: "2 أشخاص",
-    img: "images/caravans/caravan3/IMG-20240103-WA0022.jpg",
+    img: "images/caravans/caravan3/1.jpg",
+    imageFolder: "caravan3",
     dimensions: {
       length: "3.90m",
       width: "2m",
@@ -105,7 +108,8 @@ $caravans = {
     name: "MONESTER",
     price: "$6200",
     capacity: "4 أشخاص",
-    img: "images/caravans/caravan4/IMG-20240103-WA0031.jpg",
+    img: "images/caravans/caravan4/1.jpg",
+    imageFolder: "caravan4",
     dimensions: {
       length: "2.25 متر",
       width: "2.25 متر",
@@ -138,7 +142,8 @@ $caravans = {
     name: "POWER",
     price: "$11600",
     capacity: "5 أشخاص",
-    img: "images/caravans/caravan3/IMG-20240103-WA0022.jpg",
+    img: "images/caravans/caravan5/1.jpeg",
+    imageFolder: "caravan5",
     dimensions: {
       length: "3.90m",
       width: "2m",
@@ -202,7 +207,7 @@ function addCarsCards() {
       </div>
       <p class="d-flex mb-0 d-block">
         
-        <a class="btn btn-secondary py-2 ml-1 more_detailes" href="car-single.html" style="width:100%" caravan-id=${carvan} class="btn btn-secondary py-2 ml-1">التفاصيل</a>
+        <a class="btn btn-secondary py-2 ml-1 more_detailes" href="car.html" style="width:100%" caravan-id=${carvan} class="btn btn-secondary py-2 ml-1">التفاصيل</a>
       </p>
     </div>
     </div>
