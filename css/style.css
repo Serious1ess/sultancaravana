@@ -13044,7 +13044,7 @@ textarea.form-control {
 .logo-icon {
   width: 200px; /* Set the width as needed */
   height: 150px; /* Set the height as needed */
-  background: url("/sultancaravana/icons/newLogo2.png") center;
+  background: url("/icons/newLogo2.png") center;
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
 }
