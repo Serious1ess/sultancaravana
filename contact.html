@@ -49,29 +49,29 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="oi oi-menu"></span> Menu
+          <span class="oi oi-menu"></span> القائمة
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" dir="rtl">
             <li class="nav-item">
               <a href="index.html" class="nav-link">الرئيسية</a>
-            </li>
-            <li class="nav-item active">
-              <a href="about.html" class="nav-link">من نحن</a>
             </li>
             <li class="nav-item">
               <a href="services.html" class="nav-link">الخدمات</a>
             </li>
             <!-- <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li> -->
             <li class="nav-item">
-              <a href="car.html" class="nav-link">الكرفانات</a>
+              <a href="car.html " class="nav-link">الكرفانات</a>
             </li>
             <li class="nav-item">
               <a href="blog.html" class="nav-link d-none">المدونة</a>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link">التواصل</a>
+              <a href="about.html" class="nav-link">من نحن</a>
+            </li>
+            <li class="nav-item active">
+              <a href="contact.html" class="nav-link">تواصل معنا</a>
             </li>
           </ul>
         </div>
@@ -81,29 +81,41 @@
 
     <section
       class="hero-wrap hero-wrap-2 js-fullheight"
-      style="background-image: url('images/bg_3.jpg')"
-      data-stellar-background-ratio="0.5"
+      style="
+        background-image: url('images/car_detailes_cover.jpg');
+        background-position: center;
+        background-size: cover;
+      "
     >
+      <!-- Your content goes here -->
+
       <div class="overlay"></div>
       <div class="container">
         <div
-          class="row no-gutters slider-text js-fullheight align-items-end justify-content-start"
+          class="row no-gutters slider-text js-fullheight align-items-end justify-content-end"
         >
-          <div class="col-md-9 ftco-animate pb-5">
+          <div
+            class="col-md-9 ftco-animate pb-5"
+            style="text-align: right; direction: rtl"
+          >
             <p class="breadcrumbs">
               <span class="mr-2"
                 ><a href="index.html"
-                  >Home <i class="ion-ios-arrow-forward"></i></a
+                  >الرئيسية <i class="ion-ios-arrow-forward"></i></a
               ></span>
-              <span>Contact <i class="ion-ios-arrow-forward"></i></span>
+              <span> من نحن <i class="ion-ios-arrow-forward"></i></span>
             </p>
-            <h1 class="mb-3 bread">Contact Us</h1>
+            <h1 class="mb-3 bread">من نحن</h1>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ftco-section contact-section">
+    <section
+      class="ftco-section contact-section"
+      style="text-align: right"
+      dir="rtl"
+    >
       <div class="container">
         <div class="row d-flex mb-5 contact-info">
           <div class="col-md-4">
@@ -113,10 +125,7 @@
                   <div class="icon mr-3">
                     <span class="icon-map-o"></span>
                   </div>
-                  <p>
-                    <span>Address:</span> 198 West 21th Street, Suite 721 New
-                    York NY 10016
-                  </p>
+                  <p><span>العنوان</span>تركيا/اسطنبول</p>
                 </div>
               </div>
               <div class="col-md-12">
@@ -125,7 +134,7 @@
                     <span class="icon-mobile-phone"></span>
                   </div>
                   <p>
-                    <span>Phone:</span>
+                    <span>الهاتف:</span>
                     <a href="tel://1234567920">+ 1235 2355 98</a>
                   </p>
                 </div>
@@ -136,7 +145,7 @@
                     <span class="icon-envelope-o"></span>
                   </div>
                   <p>
-                    <span>Email:</span>
+                    <span>الايميل:</span>
                     <a href="mailto:info@yoursite.com">info@yoursite.com</a>
                   </p>
                 </div>
@@ -196,11 +205,13 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">
-                <a href="#" class="logo">Car<span>book</span></a>
+                <a class="navbar-brand" href="index.html"
+                  >Sultana<span>Caravan</span></a
+                >
               </h2>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+                شركة سلطانه كرفان قوية في تركيا بالنسبة للإنتاج العالمي وجاهزة
+                لمرافقتك ومرافقة أحلامك في جميع أنحاء العالم
               </p>
               <ul
                 class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"
@@ -219,47 +230,52 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Information</h2>
+              <h2 class="ftco-heading-2">معلومات</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">About</a></li>
-                <li><a href="#" class="py-2 d-block">Services</a></li>
+                <li><a href="about.html" class="py-2 d-block">من نحن</a></li>
                 <li>
-                  <a href="#" class="py-2 d-block">Term and Conditions</a>
+                  <a href="services.html" class="py-2 d-block">الخدمات</a>
                 </li>
                 <li>
-                  <a href="#" class="py-2 d-block">Best Price Guarantee</a>
+                  <a href="car.html" class="py-2 d-block"> الكرفانات</a>
                 </li>
                 <li>
+                  <a href="contact.html" class="py-2 d-block">التواصل</a>
+                </li>
+                <!-- <li>
                   <a href="#" class="py-2 d-block"
                     >Privacy &amp; Cookies Policy</a
                   >
+                </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">الدعم الفني</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="CQ.html" class="py-2 d-block">الأسئلةالشائعة</a>
+                </li>
+                <!-- <li><a href="#" class="py-2 d-block">Payment Option</a></li> -->
+                <!-- <li><a href="#" class="py-2 d-block">Booking Tips</a></li> -->
+                <li><a href="about.html" class="py-2 d-block">الميزيات</a></li>
+                <li>
+                  <a href="contact.html" class="py-2 d-block">تواصل معنا</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Customer Support</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">FAQ</a></li>
-                <li><a href="#" class="py-2 d-block">Payment Option</a></li>
-                <li><a href="#" class="py-2 d-block">Booking Tips</a></li>
-                <li><a href="#" class="py-2 d-block">How it works</a></li>
-                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <h2 class="ftco-heading-2" style="text-align: right">
+                اي أسئلة؟
+              </h2>
               <div class="block-23 mb-3">
                 <ul>
                   <li>
                     <span class="icon icon-map-marker"></span
-                    ><span class="text"
-                      >203 Fake St. Mountain View, San Francisco, California,
-                      USA</span
-                    >
+                    ><span class="text">Istanbul</span>
                   </li>
                   <li>
                     <a href="#"
@@ -281,13 +297,11 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               Copyright &copy;
               <script>
                 document.write(new Date().getFullYear());
               </script>
               All rights reserved
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
         </div>

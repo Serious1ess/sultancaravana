@@ -10793,7 +10793,7 @@ h5,
   background: #2a2727 !important;
 }
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-  color: #2a2727;
+  color: #e0623a;
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
@@ -10929,10 +10929,10 @@ h5,
 }
 @media (max-width: 991.98px) {
   .hero-wrap {
-    height: 1150px;
+    height: 700px;
   }
   .hero-wrap .overlay {
-    height: 1150px;
+    height: 700px;
   }
 }
 .hero-wrap.hero-wrap-2 {
@@ -10953,7 +10953,7 @@ h5,
 }
 @media (max-width: 991.98px) {
   .slider-text {
-    height: 1150px;
+    height: 600px;
   }
 }
 .slider-text h1 {
@@ -11001,7 +11001,7 @@ h5,
   color: white;
 }
 .slider-text .breadcrumbs {
-  font-size: 14px;
+  font-size: 30px;
   margin-bottom: 20px;
   z-index: 99;
   text-transform: uppercase;
@@ -11918,7 +11918,7 @@ textarea.form-control {
 }
 @media (max-width: 767.98px) {
   .ftco-section {
-    padding: 6em 0;
+    padding: 2em 0;
   }
 }
 
@@ -12324,10 +12324,10 @@ textarea.form-control {
   opacity: 0;
   background: #e0623a;
 }
-@media (min-width: 992px) {
-  .ftco-counter .overlay {
-    opacity: 0.3;
-  }
+/* @media (min-width: 992px) { */
+.ftco-counter .overlay {
+  opacity: 0.3;
+  /* } */
 }
 .ftco-counter .text strong.number {
   font-weight: 300;
@@ -12967,4 +12967,40 @@ textarea.form-control {
   border: none;
   font-size: 18px;
   color: #333;
+}
+
+.length-icon {
+  width: 100px; /* Set the width as needed */
+  height: 100px; /* Set the height as needed */
+  background: url("/sultancaravana/icons/length.png") center;
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+.width-icon {
+  width: 100px; /* Set the width as needed */
+  height: 100px; /* Set the height as needed */
+  background: url("/sultancaravana/icons/width.png") center;
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+.height-icon {
+  width: 100px; /* Set the width as needed */
+  height: 100px; /* Set the height as needed */
+  background: url("/sultancaravana/icons/height.png") center;
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+.weight-icon {
+  width: 100px; /* Set the width as needed */
+  height: 100px; /* Set the height as needed */
+  background: url("/sultancaravana/icons/w2.png") center;
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+.passenger-icon {
+  width: 100px; /* Set the width as needed */
+  height: 100px; /* Set the height as needed */
+  background: url("/sultancaravana/icons/passengers.png") center;
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
 }

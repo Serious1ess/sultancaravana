@@ -61,7 +61,28 @@ if (isMobile) {
 //     })
 //     .catch((error) => console.error("Error fetching HTML file:", error));
 // }
+function getData(callback) {
+  const jsonFilePath = `${window.location.origin}/sultancaravana/carvanData.json`;
 
+  fetch(jsonFilePath)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((jsonData) => {
+      // Process the JSON data
+      callback(jsonData);
+    })
+    .catch((error) => {
+      console.error("Error fetching JSON file:", error);
+    });
+}
+getData((jsonData) => {
+  $caravans = jsonData;
+  addCarsCards();
+});
 function addCarsCards() {
   let carList = document.querySelector(".carvans_list");
   carList.innerHTML = "";
@@ -108,14 +129,17 @@ function addCarsCards() {
         });
       });
     document.querySelector("#back_to_cars").addEventListener("click", () => {
-      let carsList = document.querySelector("#carlist-section");
-      carsList.firstElementChild.classList.remove("d-none");
-      document.querySelector("#car-details-section").remove();
+      if (document.querySelector("#car-details-section")) {
+        let carsList = document.querySelector("#carlist-section");
+        carsList.firstElementChild.classList.remove("d-none");
+
+        document.querySelector("#car-details-section").remove();
+      }
     });
     carList.appendChild(carElmentDiv);
   }
 }
-addCarsCards();
+
 function readTextFile(path) {
   path = getLink(path);
 
@@ -201,7 +225,7 @@ function buildCarvanInfo(container) {
   caravan_length.innerText = caravan.dimensions.length;
   caravan_width.innerText = caravan.dimensions.width;
   caravan_capacity.innerText = caravan.capacity;
-  caravan_wight.innerText = caravan.dimensions.weight;
+  caravan_wight.innerText = caravan.dimensions.weight || "";
   caravan_height.innerText = caravan.dimensions.height;
   let featuresContainer1 = container.querySelector(".features-list1");
   let featuresContainer2 = container.querySelector(".features-list2");

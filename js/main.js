@@ -343,193 +343,214 @@ AOS.init({
   });
   $("#time_pick").timepicker();
 })(jQuery);
-$caravans = {
-  caravan1: {
-    name: "GOLDEN GRAND",
-    price: "$15,500",
-    img: "images/caravans/caravan1/1.jpg",
-    imageFolder: "caravan1",
-    ImageType: "jpg",
-    imageNumber: 5,
-    capacity: "4",
-    dimensions: {
-      length: "3.90m",
-      width: "2.25 M",
-      height: "2M",
-    },
-    water_tanks: {
-      clean_water: "100 L",
-      bathroom_water: "40 L",
-    },
-    features: [
-      "نافذة بانورامية",
-      "نظام تدفئة فيباصطو",
-      "شاشة تلفاز أندرويد",
-      "ثلاجة 90 لتر",
-      "كفالة لمدة سنتين",
-    ],
-    solar_power_system: true,
-    optional_additions: {
-      air_conditioning: {
-        available: true,
-        additional_cost: "تتفاوت التكلفة الاضافية حسب طلبكم",
-      },
-      custom_color: true,
-    },
-    discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
-  },
-  caravan2: {
-    name: "TIGER",
-    price: "$4200",
-    capacity: "2 أشخاص",
-    img: "images/caravans/caravan2/1.jpg",
-    imageFolder: "caravan2",
-    ImageType: "jpg",
-    imageNumber: 11,
-    dimensions: {
-      length: "2.40 m",
-      width: "2 m",
-      height: "2 m",
-      weight: "450 kg",
-    },
-    water_tanks: {
-      clean_water: "100 لتر",
-      bathroom_water: "40 لتر",
-    },
-    features: [
-      "نافذة بانورامية",
-      "نظام تدفئة",
-      "شاشة تلفاز أندرويد",
-      "ثلاجة 90 لتر",
-    ],
-    solar_power_system: true,
-    optional_additions: {
-      air_conditioning: {
-        available: true,
-        additional_cost: "تتفاوت التكلفة الاضافية حسب طلبكم",
-      },
-      custom_color: true,
-    },
-    discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
-  },
-  caravan3: {
-    name: "SULTAN",
-    price: "$5200",
-    capacity: "2 أشخاص",
-    img: "images/caravans/caravan3/1.jpg",
-    imageFolder: "caravan3",
-    imageNumber: 8,
-    dimensions: {
-      length: "3.90m",
-      width: "2m",
-      height: "2m",
-      weight: "750 kg",
-    },
-    water_tanks: {
-      clean_water: "100 L",
-      bathroom_water: "40 L",
-    },
-    features: [
-      "خزان ماء نظيف 100 لتر",
-      "نظام تدفئة",
-      "شاشة تلفاز أندرويد",
-      "ثلاجة  تتسع ل 90 ليتر",
-    ],
-    solar_power_system: true,
-    optional_additions: {
-      air_conditioning: {
-        available: true,
-        additional_cost: "تتفاوت التكلفة الاضافية حسب طلبكم",
-      },
-      custom_color: true,
-    },
-    discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
-  },
-  caravan4: {
-    name: "MONESTER",
-    price: "$6200",
-    capacity: "4 أشخاص",
-    img: "images/caravans/caravan4/1.jpg",
-    imageFolder: "caravan4",
-    imageNumber: 4,
-    ImageType: "jpg",
-    dimensions: {
-      length: "2.25 متر",
-      width: "2.25 متر",
-      height: "2 متر",
-    },
-    water_tanks: {
-      clean_water: "100 لتر",
-      bathroom_water: "90 لتر",
-    },
-    features: [
-      "نافذة بانورامية",
-      "نظام تدفئة",
-      "شاشة تلفاز أندرويد",
-      "فرن غاز له  رأسين",
-      "مغسلة يد اضافية في الحمام",
-      "بلور بانورامي كامل",
-      "خشب الاثاث بوزن خفيف وجودة أعلى",
-    ],
-    solar_power_system: true,
-    optional_additions: {
-      air_conditioning: {
-        available: true,
-        additional_cost: "تتفاوت التكلفة الاضافية حسب طلبكم",
-      },
-      custom_color: true,
-    },
-    discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
-  },
-  caravan5: {
-    name: "POWER",
-    price: "$11600",
-    capacity: "5 أشخاص",
-    img: "images/caravans/caravan5/1.jpeg",
-    imageFolder: "caravan5",
-    imageNumber: 23,
-    ImageType: "jpeg",
-    videosNum: 1,
-    dimensions: {
-      length: "3.90m",
-      width: "2m",
-      height: "2m",
-      weight: "750 kg",
-    },
-    water_tanks: {
-      clean_water: "100 L",
-      bathroom_water: "40 L",
-    },
-    features: [
-      "خزان ماء نظيف 100 لتر",
-      "نظام تدفئة",
-      "ثلاجة  تتسع ل 90 ليتر",
-      "طلاء خارجي للوحة CIP من GOFRAJLIXPS",
-      "نوافذ مفتوحة أمامية وجانبية",
-      "طلاء خارجي للوحة CIP من GOFRAJLIXPS",
-      "نوافذ مفتوحة أمامية وجانبية",
-      "لوحة تحكم ذات 8 أزرار",
-      "تركيب داخلي 12 فولت",
-      "مقبس توصيل السيارة ذو 7 دبابيس",
-      "تجميع إيقاف LED",
-      "LED و USB ومآخذ 220 فولت",
-      "ثلاجة 220 فولت",
-      "حوض",
-      "طباخ الغاز",
-      "دش خارجي",
-      "مرحاض متنقل سعة 20 لتر",
-      "خزانة حمام خلاط باربر",
-      "خزان مياه سعة 100 لتر",
-    ],
-    solar_power_system: true,
-    optional_additions: {
-      air_conditioning: {
-        available: true,
-        additional_cost: "تتفاوت التكلفة الاضافية حسب طلبكم",
-      },
-      custom_color: true,
-    },
-    discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
-  },
-};
+// $caravans = {
+//   caravan1: {
+//     name: "GOLDEN GRAND",
+//     price: "$15,500",
+//     img: "images/caravans/caravan1/1.jpg",
+//     imageFolder: "caravan1",
+//     ImageType: "jpg",
+//     imageNumber: 5,
+//     capacity: "4",
+//     dimensions: {
+//       length: "3.90m",
+//       width: "2.25 M",
+//       height: "2M",
+//     },
+//     water_tanks: {
+//       clean_water: "100 L",
+//       bathroom_water: "40 L",
+//     },
+//     features: [
+//       "نافذة بانورامية",
+//       "نظام تدفئة فيباصطو",
+//       "شاشة تلفاز أندرويد",
+//       "ثلاجة 90 لتر",
+//       "كفالة لمدة سنتين",
+//     ],
+//     solar_power_system: true,
+//     optional_additions: {
+//       air_conditioning: {
+//         available: true,
+//         additional_cost: "تتفاوت التكلفة الاضافية حسب طلبكم",
+//       },
+//       custom_color: true,
+//     },
+//     discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
+//   },
+//   caravan2: {
+//     name: "TIGER",
+//     price: "$4200",
+//     capacity: "2 أشخاص",
+//     img: "images/caravans/caravan2/1.jpg",
+//     imageFolder: "caravan2",
+//     ImageType: "jpg",
+//     imageNumber: 11,
+//     dimensions: {
+//       length: "2.40 m",
+//       width: "2 m",
+//       height: "2 m",
+//       weight: "450 kg",
+//     },
+//     water_tanks: {
+//       clean_water: "100 لتر",
+//       bathroom_water: "40 لتر",
+//     },
+//     features: [
+//       "نافذة بانورامية",
+//       "نظام تدفئة",
+//       "شاشة تلفاز أندرويد",
+//       "ثلاجة 90 لتر",
+//     ],
+//     solar_power_system: true,
+//     optional_additions: {
+//       air_conditioning: {
+//         available: true,
+//         additional_cost: "تتفاوت التكلفة الاضافية حسب طلبكم",
+//       },
+//       custom_color: true,
+//     },
+//     discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
+//   },
+//   caravan3: {
+//     name: "SULTAN",
+//     price: "$5200",
+//     capacity: "2 أشخاص",
+//     img: "images/caravans/caravan3/1.jpg",
+//     imageFolder: "caravan3",
+//     imageNumber: 8,
+//     dimensions: {
+//       length: "3.90m",
+//       width: "2m",
+//       height: "2m",
+//       weight: "750 kg",
+//     },
+//     water_tanks: {
+//       clean_water: "100 L",
+//       bathroom_water: "40 L",
+//     },
+//     features: [
+//       "خزان ماء نظيف 100 لتر",
+//       "نظام تدفئة",
+//       "شاشة تلفاز أندرويد",
+//       "ثلاجة  تتسع ل 90 ليتر",
+//     ],
+//     solar_power_system: true,
+//     optional_additions: {
+//       air_conditioning: {
+//         available: true,
+//         additional_cost: "تتفاوت التكلفة الاضافية حسب طلبكم",
+//       },
+//       custom_color: true,
+//     },
+//     discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
+//   },
+//   caravan4: {
+//     name: "MONESTER",
+//     price: "$6200",
+//     capacity: "4 أشخاص",
+//     img: "images/caravans/caravan4/1.jpg",
+//     imageFolder: "caravan4",
+//     imageNumber: 4,
+//     ImageType: "jpg",
+//     dimensions: {
+//       length: "2.25 متر",
+//       width: "2.25 متر",
+//       height: "2 متر",
+//     },
+//     water_tanks: {
+//       clean_water: "100 لتر",
+//       bathroom_water: "90 لتر",
+//     },
+//     features: [
+//       "نافذة بانورامية",
+//       "نظام تدفئة",
+//       "شاشة تلفاز أندرويد",
+//       "فرن غاز له  رأسين",
+//       "مغسلة يد اضافية في الحمام",
+//       "بلور بانورامي كامل",
+//       "خشب الاثاث بوزن خفيف وجودة أعلى",
+//     ],
+//     solar_power_system: true,
+//     optional_additions: {
+//       air_conditioning: {
+//         available: true,
+//         additional_cost: "تتفاوت التكلفة الاضافية حسب طلبكم",
+//       },
+//       custom_color: true,
+//     },
+//     discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
+//   },
+//   caravan5: {
+//     name: "POWER",
+//     price: "$11600",
+//     capacity: "5 أشخاص",
+//     img: "images/caravans/caravan5/1.jpeg",
+//     imageFolder: "caravan5",
+//     imageNumber: 23,
+//     ImageType: "jpeg",
+//     videosNum: 1,
+//     dimensions: {
+//       length: "3.90m",
+//       width: "2m",
+//       height: "2m",
+//       weight: "750 kg",
+//     },
+//     water_tanks: {
+//       clean_water: "100 L",
+//       bathroom_water: "40 L",
+//     },
+//     features: [
+//       "خزان ماء نظيف 100 لتر",
+//       "نظام تدفئة",
+//       "ثلاجة  تتسع ل 90 ليتر",
+//       "طلاء خارجي للوحة CIP من GOFRAJLIXPS",
+//       "نوافذ مفتوحة أمامية وجانبية",
+//       "طلاء خارجي للوحة CIP من GOFRAJLIXPS",
+//       "نوافذ مفتوحة أمامية وجانبية",
+//       "لوحة تحكم ذات 8 أزرار",
+//       "تركيب داخلي 12 فولت",
+//       "مقبس توصيل السيارة ذو 7 دبابيس",
+//       "تجميع إيقاف LED",
+//       "LED و USB ومآخذ 220 فولت",
+//       "ثلاجة 220 فولت",
+//       "حوض",
+//       "طباخ الغاز",
+//       "دش خارجي",
+//       "مرحاض متنقل سعة 20 لتر",
+//       "خزانة حمام خلاط باربر",
+//       "خزان مياه سعة 100 لتر",
+//     ],
+//     solar_power_system: true,
+//     optional_additions: {
+//       air_conditioning: {
+//         available: true,
+//         additional_cost: "تتفاوت التكلفة الاضافية حسب طلبكم",
+//       },
+//       custom_color: true,
+//     },
+//     discp: "تتفاوت التكلفة الاضافية حسب طلبكم",
+//   },
+// };
+function getData(callback) {
+  const jsonFilePath = `${window.location.origin}/sultancaravana/carvanData.json`;
+
+  fetch(jsonFilePath)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((jsonData) => {
+      // Process the JSON data
+      callback(jsonData);
+    })
+    .catch((error) => {
+      console.error("Error fetching JSON file:", error);
+    });
+}
+getData((jsonData) => {
+  $caravans = jsonData;
+});
 $selectedCaravan = 0;
