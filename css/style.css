@@ -2068,6 +2068,13 @@ pre code {
   .table-responsive-lg > .table-bordered {
     border: 0;
   }
+  .logo-icon {
+    width: 200px; /* Set the width as needed */
+    height: 64px !important; /* Set the height as needed */
+    background: url("/sultancaravana/icons/newLogo2.png") center;
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -13031,6 +13038,13 @@ textarea.form-control {
   width: 80px; /* Set the width as needed */
   height: 80px; /* Set the height as needed */
   background: url("/icons/tiktok.png") center;
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+.logo-icon {
+  width: 200px; /* Set the width as needed */
+  height: 150px; /* Set the height as needed */
+  background: url("/sultancaravana/icons/newLogo2.png") center;
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
 }
