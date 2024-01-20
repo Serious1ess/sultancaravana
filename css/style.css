@@ -12988,49 +12988,49 @@ textarea.form-control {
 .length-icon {
   width: 100px; /* Set the width as needed */
   height: 100px; /* Set the height as needed */
-  background: url("/sultancaravana/icons/length.png") center;
+  background: url("/icons/length.png") center;
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
 }
 .width-icon {
   width: 100px; /* Set the width as needed */
   height: 100px; /* Set the height as needed */
-  background: url("/sultancaravana/icons/width.png") center;
+  background: url("/icons/width.png") center;
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
 }
 .height-icon {
   width: 100px; /* Set the width as needed */
   height: 100px; /* Set the height as needed */
-  background: url("/sultancaravana/icons/height.png") center;
+  background: url("/icons/height.png") center;
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
 }
 .weight-icon {
   width: 100px; /* Set the width as needed */
   height: 100px; /* Set the height as needed */
-  background: url("/sultancaravana/icons/w2.png") center;
+  background: url("/icons/w2.png") center;
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
 }
 .passenger-icon {
   width: 100px; /* Set the width as needed */
   height: 100px; /* Set the height as needed */
-  background: url("/sultancaravana/icons/passengers.png") center;
+  background: url("/icons/passengers.png") center;
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
 }
 .caravan-icon {
   width: 150px; /* Set the width as needed */
   height: 150px; /* Set the height as needed */
-  background: url("/sultancaravana/icons/caravan.png") center;
+  background: url("/icons/caravan.png") center;
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
 }
 .tiktok-icon {
   width: 80px; /* Set the width as needed */
   height: 80px; /* Set the height as needed */
-  background: url("/sultancaravana/icons/tiktok.png") center;
+  background: url("/icons/tiktok.png") center;
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
 }
