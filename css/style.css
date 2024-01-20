@@ -1,9 +1,33 @@
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+@import url(https://db.onlinewebfonts.com/c/125063e353c1f65c55ba1e3811969217?family=GE+SS+Two+Medium);
+@font-face {
+  font-family: "GE SS Two Medium";
+  src: url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.eot");
+  src: url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/125063e353c1f65c55ba1e3811969217.svg#GE SS Two Medium")
+      format("svg");
+}
+@font-face {
+  font-family: "GE SS Two Medium";
+  src: url("https://db.onlinewebfonts.com/t/50c324e2f4000de820712a28cb834fac.eot");
+  src: url("https://db.onlinewebfonts.com/t/50c324e2f4000de820712a28cb834fac.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/50c324e2f4000de820712a28cb834fac.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/50c324e2f4000de820712a28cb834fac.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/50c324e2f4000de820712a28cb834fac.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/50c324e2f4000de820712a28cb834fac.svg#GE SS Two Medium")
+      format("svg");
+}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -46,7 +70,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "GE SS Two Medium";
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -67,9 +91,7 @@ section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "GE SS Two Medium";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -199,8 +221,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+  font-family: "GE SS Two Medium";
   font-size: 1em;
 }
 
@@ -6368,9 +6389,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "GE SS Two Medium";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6484,9 +6503,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "GE SS Two Medium";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8297,7 +8314,7 @@ button.bg-dark:focus {
 
 @media (min-width: 768px) {
   .float-md-left {
-    float: left !important;
+    float: right !important;
   }
   .float-md-right {
     float: right !important;
@@ -10315,8 +10332,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace !important;
+  font-family: "GE SS Two Medium" !important;
 }
 
 .text-justify {
@@ -10636,7 +10652,7 @@ a.text-dark:focus {
 }
 
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "GE SS Two Medium";
   background: #fff;
   font-size: 16px;
   line-height: 1.8;
@@ -10953,7 +10969,7 @@ h5,
 }
 @media (max-width: 991.98px) {
   .slider-text {
-    height: 600px;
+    height: 500px;
   }
 }
 .slider-text h1 {
@@ -10993,7 +11009,7 @@ h5,
   background: #fff;
 }
 .slider-text .icon-wrap .heading-title span {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "GE SS Two Medium";
   color: #fff;
 }
 .slider-text p {
@@ -11365,7 +11381,6 @@ h5,
 .car-wrap .text .price {
   color: #e0623a;
   margin-bottom: 0;
-  font-weight: 600;
 }
 .car-wrap .text .price span {
   font-size: 12px;
@@ -11951,7 +11966,7 @@ textarea.form-control {
   font-weight: normal;
   color: #fff;
   margin-bottom: 40px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
 }
 .ftco-footer .ftco-footer-widget ul li a {
@@ -11981,6 +11996,7 @@ textarea.form-control {
   font-size: 17px;
   font-weight: 400;
   color: #000000;
+  margin-right: 20px;
 }
 
 .ftco-footer-social li {
@@ -13001,6 +13017,20 @@ textarea.form-control {
   width: 100px; /* Set the width as needed */
   height: 100px; /* Set the height as needed */
   background: url("/sultancaravana/icons/passengers.png") center;
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+.caravan-icon {
+  width: 150px; /* Set the width as needed */
+  height: 150px; /* Set the height as needed */
+  background: url("/sultancaravana/icons/caravan.png") center;
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+.tiktok-icon {
+  width: 80px; /* Set the width as needed */
+  height: 80px; /* Set the height as needed */
+  background: url("/sultancaravana/icons/tiktok.png") center;
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
 }
