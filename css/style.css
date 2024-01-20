@@ -12790,6 +12790,10 @@ textarea.form-control {
   .sidebar-wrap .fields .icon {
     right: 10px;
   }
+  .ftco-footer-social {
+    padding: 0px !important;
+    text-align: center;
+  }
 }
 .sidebar-wrap .fields .select-wrap {
   position: relative;
